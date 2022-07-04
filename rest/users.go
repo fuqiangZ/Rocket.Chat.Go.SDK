@@ -89,7 +89,7 @@ func (c *Client) Login(credentials *models.UserCredentials) error {
 	}
 
 	response := new(logonResponse)
-	data := url.Values{"user": {credentials.Email}, "password": {credentials.Password}}
+	data := url.Values{"user": {credentials.Name}, "password": {credentials.Password}}
 	if err := c.PostForm("login", data, response); err != nil {
 		return err
 	}
