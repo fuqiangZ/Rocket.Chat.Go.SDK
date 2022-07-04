@@ -174,3 +174,14 @@ func (c *Client) doRequest(method, api string, params url.Values, body io.Reader
 
 	return response.OK()
 }
+
+/**
+* 返回auth的
+* request.Header.Set("X-Auth-Token", c.auth.token)
+* request.Header.Set("X-User-Id", c.auth.id)
+**/
+func (c *Client) GetAuthInfo() (xUserId string, xAuthToken string) {
+	xUserId = c.auth.id
+	xAuthToken = c.auth.token
+	return
+}
