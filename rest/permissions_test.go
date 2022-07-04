@@ -1,8 +1,8 @@
 package rest
 
 import (
-	"github.com/RocketChat/Rocket.Chat.Go.SDK/common_testing"
-	"github.com/RocketChat/Rocket.Chat.Go.SDK/models"
+	"github.com/fuqiangZ/Rocket.Chat.Go.SDK/common_testing"
+	"github.com/fuqiangZ/Rocket.Chat.Go.SDK/models"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
